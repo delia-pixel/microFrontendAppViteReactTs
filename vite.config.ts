@@ -10,7 +10,9 @@ export default defineConfig({
       name: "host",
       filename: "remoteEntry.js",
       exposes: {
-        "./Button": "./src/components/Button",
+        "./ButtonLangage": "./src/components/ButtonLangage",
+        "./Header": "./src/components/Header",
+        "./MoovieItem": "./src/components/MoovieItem",
       },
       shared: ["react", "react-dom"],
     }),
