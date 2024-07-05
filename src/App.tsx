@@ -6,12 +6,32 @@ function App() {
   return (
     <>
       <Header />
-      <MoovieItem
-        image="lion.png"
-        title={"Game of thrones"}
-        date={"20 April"}
-        age={12}
-      />
+      <div className="flex gap-4">
+        <MoovieItem
+          image="/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"
+          title={"Game of thrones"}
+          date={"20 April"}
+          age={12}
+        />
+        <MoovieItem
+          image="/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"
+          title={"Game of thrones"}
+          date={"20 April"}
+          age={12}
+        />
+        <MoovieItem
+          image="/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"
+          title={"Game of thrones"}
+          date={"20 April"}
+          age={12}
+        />
+        <MoovieItem
+          image="/iADOJ8Zymht2JPMoy3R7xceZprc.jpg"
+          title={"Game of thrones"}
+          date={"20 April"}
+          age={12}
+        />
+      </div>
     </>
   );
 }

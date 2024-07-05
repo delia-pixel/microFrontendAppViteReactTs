@@ -9,13 +9,15 @@ type Moovie = {
 };
 
 const MoovieItem: React.FC<Moovie> = (props) => {
-  // const imgUrl = `./assets/img/${props.image}`;
+  const imgUrl = `https://image.tmdb.org/t/p/original${props.image}`;
   return (
-    <div
-      className={`bg-black h-96 w-72 bg-fixed bg-center bg-no-repeat bg-cover border-2 border-slate-900 mt-48 flex items-end`}
-      style={{ backgroundImage: `url(./assets/img/${props.image})` }}
-    >
-      <div className="flex flex-col items-start flex-shrink-0 justify-end ml-10 w-40 h-32 mb-8">
+    <div className={`h-auto w-72 rounded-lg flex items-end `}>
+      <img
+        src={imgUrl}
+        alt={props.title}
+        className="bg-center bg-no-repeat object-cover"
+      />
+      <div className="flex flex-col items-start absolute mb-8 flex-shrink-0 justify-end ml-4 w-40 h-32  shadow-2xl">
         <p className="text-xl text-slate-50 font-bold">{props.title}</p>
         <p className="text-md text-slate-50 font-normal">{props.date}</p>
         <p className="text-md text-slate-50 font-medium">{props.age} +</p>
